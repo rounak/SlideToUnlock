@@ -1,0 +1,268 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F97B43E815F3FEC400E3228E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F97B43E715F3FEC400E3228E /* UIKit.framework */; };
+		F97B43EA15F3FEC400E3228E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F97B43E915F3FEC400E3228E /* Foundation.framework */; };
+		F97B43EC15F3FEC400E3228E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F97B43EB15F3FEC400E3228E /* CoreGraphics.framework */; };
+		F97B43F215F3FEC400E3228E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F97B43F015F3FEC400E3228E /* InfoPlist.strings */; };
+		F97B43F415F3FEC400E3228E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F97B43F315F3FEC400E3228E /* main.m */; };
+		F97B43F815F3FEC400E3228E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F97B43F715F3FEC400E3228E /* AppDelegate.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F97B43E315F3FEC400E3228E /* SlideToUnlock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlideToUnlock.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F97B43E715F3FEC400E3228E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F97B43E915F3FEC400E3228E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F97B43EB15F3FEC400E3228E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F97B43EF15F3FEC400E3228E /* SlideToUnlock-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SlideToUnlock-Info.plist"; sourceTree = "<group>"; };
+		F97B43F115F3FEC400E3228E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F97B43F315F3FEC400E3228E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F97B43F515F3FEC400E3228E /* SlideToUnlock-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SlideToUnlock-Prefix.pch"; sourceTree = "<group>"; };
+		F97B43F615F3FEC400E3228E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F97B43F715F3FEC400E3228E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F97B43E015F3FEC400E3228E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F97B43E815F3FEC400E3228E /* UIKit.framework in Frameworks */,
+				F97B43EA15F3FEC400E3228E /* Foundation.framework in Frameworks */,
+				F97B43EC15F3FEC400E3228E /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F97B43D815F3FEC300E3228E = {
+			isa = PBXGroup;
+			children = (
+				F97B43ED15F3FEC400E3228E /* SlideToUnlock */,
+				F97B43E615F3FEC400E3228E /* Frameworks */,
+				F97B43E415F3FEC400E3228E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F97B43E415F3FEC400E3228E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F97B43E315F3FEC400E3228E /* SlideToUnlock.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F97B43E615F3FEC400E3228E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F97B43E715F3FEC400E3228E /* UIKit.framework */,
+				F97B43E915F3FEC400E3228E /* Foundation.framework */,
+				F97B43EB15F3FEC400E3228E /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F97B43ED15F3FEC400E3228E /* SlideToUnlock */ = {
+			isa = PBXGroup;
+			children = (
+				F97B43F615F3FEC400E3228E /* AppDelegate.h */,
+				F97B43F715F3FEC400E3228E /* AppDelegate.m */,
+				F97B43EE15F3FEC400E3228E /* Supporting Files */,
+			);
+			path = SlideToUnlock;
+			sourceTree = "<group>";
+		};
+		F97B43EE15F3FEC400E3228E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F97B43EF15F3FEC400E3228E /* SlideToUnlock-Info.plist */,
+				F97B43F015F3FEC400E3228E /* InfoPlist.strings */,
+				F97B43F315F3FEC400E3228E /* main.m */,
+				F97B43F515F3FEC400E3228E /* SlideToUnlock-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F97B43E215F3FEC400E3228E /* SlideToUnlock */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F97B43FB15F3FEC400E3228E /* Build configuration list for PBXNativeTarget "SlideToUnlock" */;
+			buildPhases = (
+				F97B43DF15F3FEC400E3228E /* Sources */,
+				F97B43E015F3FEC400E3228E /* Frameworks */,
+				F97B43E115F3FEC400E3228E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SlideToUnlock;
+			productName = SlideToUnlock;
+			productReference = F97B43E315F3FEC400E3228E /* SlideToUnlock.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F97B43DA15F3FEC400E3228E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = "Rounak Jain";
+			};
+			buildConfigurationList = F97B43DD15F3FEC400E3228E /* Build configuration list for PBXProject "SlideToUnlock" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F97B43D815F3FEC300E3228E;
+			productRefGroup = F97B43E415F3FEC400E3228E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F97B43E215F3FEC400E3228E /* SlideToUnlock */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F97B43E115F3FEC400E3228E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F97B43F215F3FEC400E3228E /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F97B43DF15F3FEC400E3228E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F97B43F415F3FEC400E3228E /* main.m in Sources */,
+				F97B43F815F3FEC400E3228E /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F97B43F015F3FEC400E3228E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F97B43F115F3FEC400E3228E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F97B43F915F3FEC400E3228E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F97B43FA15F3FEC400E3228E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F97B43FC15F3FEC400E3228E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SlideToUnlock/SlideToUnlock-Prefix.pch";
+				INFOPLIST_FILE = "SlideToUnlock/SlideToUnlock-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F97B43FD15F3FEC400E3228E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SlideToUnlock/SlideToUnlock-Prefix.pch";
+				INFOPLIST_FILE = "SlideToUnlock/SlideToUnlock-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F97B43DD15F3FEC400E3228E /* Build configuration list for PBXProject "SlideToUnlock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F97B43F915F3FEC400E3228E /* Debug */,
+				F97B43FA15F3FEC400E3228E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F97B43FB15F3FEC400E3228E /* Build configuration list for PBXNativeTarget "SlideToUnlock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F97B43FC15F3FEC400E3228E /* Debug */,
+				F97B43FD15F3FEC400E3228E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F97B43DA15F3FEC400E3228E /* Project object */;
+}
