@@ -7,15 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F96C976B15F4B9F900C4BBA7 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F96C976A15F4B9F900C4BBA7 /* OpenGLES.framework */; };
+		F96C976E15F4B9FE00C4BBA7 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F96C976D15F4B9FE00C4BBA7 /* GLKit.framework */; };
+		F96C977C15F55E4100C4BBA7 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = F96C977B15F55E4100C4BBA7 /* README.md */; };
 		F97B43E815F3FEC400E3228E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F97B43E715F3FEC400E3228E /* UIKit.framework */; };
 		F97B43EA15F3FEC400E3228E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F97B43E915F3FEC400E3228E /* Foundation.framework */; };
 		F97B43EC15F3FEC400E3228E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F97B43EB15F3FEC400E3228E /* CoreGraphics.framework */; };
 		F97B43F215F3FEC400E3228E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F97B43F015F3FEC400E3228E /* InfoPlist.strings */; };
 		F97B43F415F3FEC400E3228E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F97B43F315F3FEC400E3228E /* main.m */; };
 		F97B43F815F3FEC400E3228E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F97B43F715F3FEC400E3228E /* AppDelegate.m */; };
+		F97B440015F3FF1200E3228E /* SlideToUnlockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F97B43FF15F3FF1200E3228E /* SlideToUnlockViewController.m */; };
+		F97B440215F4012D00E3228E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F97B440115F4012D00E3228E /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F96C976A15F4B9F900C4BBA7 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		F96C976D15F4B9FE00C4BBA7 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		F96C977B15F55E4100C4BBA7 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		F97B43E315F3FEC400E3228E /* SlideToUnlock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlideToUnlock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F97B43E715F3FEC400E3228E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		F97B43E915F3FEC400E3228E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -26,6 +34,9 @@
 		F97B43F515F3FEC400E3228E /* SlideToUnlock-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SlideToUnlock-Prefix.pch"; sourceTree = "<group>"; };
 		F97B43F615F3FEC400E3228E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F97B43F715F3FEC400E3228E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F97B43FE15F3FF1200E3228E /* SlideToUnlockViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SlideToUnlockViewController.h; sourceTree = "<group>"; };
+		F97B43FF15F3FF1200E3228E /* SlideToUnlockViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SlideToUnlockViewController.m; sourceTree = "<group>"; };
+		F97B440115F4012D00E3228E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +44,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F96C976E15F4B9FE00C4BBA7 /* GLKit.framework in Frameworks */,
+				F96C976B15F4B9F900C4BBA7 /* OpenGLES.framework in Frameworks */,
+				F97B440215F4012D00E3228E /* QuartzCore.framework in Frameworks */,
 				F97B43E815F3FEC400E3228E /* UIKit.framework in Frameworks */,
 				F97B43EA15F3FEC400E3228E /* Foundation.framework in Frameworks */,
 				F97B43EC15F3FEC400E3228E /* CoreGraphics.framework in Frameworks */,
@@ -45,6 +59,10 @@
 		F97B43D815F3FEC300E3228E = {
 			isa = PBXGroup;
 			children = (
+				F96C977B15F55E4100C4BBA7 /* README.md */,
+				F96C976D15F4B9FE00C4BBA7 /* GLKit.framework */,
+				F96C976A15F4B9F900C4BBA7 /* OpenGLES.framework */,
+				F97B440115F4012D00E3228E /* QuartzCore.framework */,
 				F97B43ED15F3FEC400E3228E /* SlideToUnlock */,
 				F97B43E615F3FEC400E3228E /* Frameworks */,
 				F97B43E415F3FEC400E3228E /* Products */,
@@ -74,6 +92,8 @@
 			children = (
 				F97B43F615F3FEC400E3228E /* AppDelegate.h */,
 				F97B43F715F3FEC400E3228E /* AppDelegate.m */,
+				F97B43FE15F3FF1200E3228E /* SlideToUnlockViewController.h */,
+				F97B43FF15F3FF1200E3228E /* SlideToUnlockViewController.m */,
 				F97B43EE15F3FEC400E3228E /* Supporting Files */,
 			);
 			path = SlideToUnlock;
@@ -142,6 +162,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F97B43F215F3FEC400E3228E /* InfoPlist.strings in Resources */,
+				F96C977C15F55E4100C4BBA7 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,6 +175,7 @@
 			files = (
 				F97B43F415F3FEC400E3228E /* main.m in Sources */,
 				F97B43F815F3FEC400E3228E /* AppDelegate.m in Sources */,
+				F97B440015F3FF1200E3228E /* SlideToUnlockViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +283,7 @@
 				F97B43FD15F3FEC400E3228E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
