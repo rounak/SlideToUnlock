@@ -1,4 +1,4 @@
-A simple project made over a period of a couple of days in an attempt to replicate the iOS Slide to Unlock mechanism, in an attempt to know what all is utilised beind the scenes.
+A simple project made over a period of a couple of days in an attempt to replicate the iOS Slide to Unlock mechanism, and know what all is utilised beind the scenes.
 
 Two CALayers are used to acheive rounded corners, a UILabel with the slide to unlock text, and everything hosted in a UIView. 
 
