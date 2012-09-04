@@ -10,13 +10,15 @@
 #import "SlideToUnlockViewController.h"
 
 @implementation AppDelegate
+@synthesize slideToUnlock;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    self.window.rootViewController = [[SlideToUnlockViewController alloc] init];
+    self.slideToUnlock = [[SlideToUnlockViewController alloc] initWithFrame:CGRectMake(10.0, [[UIScreen mainScreen] bounds].size.height - 250, [[UIScreen mainScreen] bounds].size.width - 20.0, 60.0)];
     // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor whiteColor];
+    [self.window addSubview:self.slideToUnlock.view];
+    self.window.backgroundColor = [UIColor darkGrayColor];
     [self.window makeKeyAndVisible];
     return YES;
 }

@@ -7,9 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SlideToUnlockViewController.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
-
+@property SlideToUnlockViewController *slideToUnlock;
 @end

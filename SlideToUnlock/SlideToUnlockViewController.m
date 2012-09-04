@@ -13,15 +13,23 @@
 {
     CALayer *slidingArea;
     CALayer *slider;
-    
+    CGRect viewFrame;
     CGFloat offset;
     CGFloat initialX;
-    UIView *superView;
     UILabel *slidingLabel;
 }
 @end
 
 @implementation SlideToUnlockViewController
+
+- (id)initWithFrame:(CGRect)passedFrame {
+    if (self = [super init]) {
+        viewFrame = passedFrame;
+    }
+    return self;
+}
+
+
 - (void)slide:(UIPanGestureRecognizer*)recognizer
 {
     if (recognizer.state == UIGestureRecognizerStateEnded || recognizer.state == UIGestureRecognizerStateCancelled)
@@ -57,9 +65,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor darkGrayColor];
-    superView = [[UIView alloc] initWithFrame:CGRectMake(10.0, self.view.frame.size.height - 250, self.view.frame.size.width - 20.0, 60.0)];
-    slidingLabel = [[UILabel alloc] initWithFrame:CGRectMake(80.0, self.view.frame.size.height - 250, self.view.frame.size.width - 90.0, 60.0)];
+    NSLog(@"%f,%f",self.view.frame.size.width,self.view.frame.size.height);
+    slidingLabel = [[UILabel alloc] initWithFrame:CGRectMake(80.0, 0, self.view.frame.size.width - 90.0, 60.0)];
     slidingLabel.textAlignment = UITextAlignmentCenter;
     slidingLabel.font = [UIFont systemFontOfSize:30.0];
     slidingLabel.numberOfLines = 1;
@@ -67,27 +74,31 @@
     slidingLabel.backgroundColor = [UIColor clearColor];
     slidingLabel.text = @"slide to unlock";
     slidingLabel.textColor = [UIColor whiteColor];
-    superView.backgroundColor = [UIColor clearColor];
+    self.view.backgroundColor = [UIColor clearColor];
    
-    [self.view addSubview:superView];
     [self.view addSubview:slidingLabel];
     
     slidingArea = [CALayer layer];
-    slidingArea.frame = superView.bounds;
+    slidingArea.frame = self.view.bounds;
     slidingArea.cornerRadius = 10.0;
     slidingArea.backgroundColor = [UIColor blackColor].CGColor;
     slidingArea.opacity = 0.5;
-    [superView.layer addSublayer:slidingArea];
+    [self.view.layer addSublayer:slidingArea];
     slider = [CALayer layer];
     slider.frame = CGRectMake(0, 0, 80.0 , slidingArea.frame.size.height);
     initialX = slider.position.x;
     slider.cornerRadius = 10.0;
     slider.backgroundColor = [UIColor whiteColor].CGColor;
-    [superView.layer addSublayer:slider];
+    [self.view.layer addSublayer:slider];
     UIPanGestureRecognizer *panGestureRecognizer = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(slide:)];
-    [superView addGestureRecognizer:panGestureRecognizer];
+    [self.view addGestureRecognizer:panGestureRecognizer];
 }
 
+-(void)loadView
+{
+    UIView *tempView = [[UIView alloc] initWithFrame:viewFrame];
+    self.view = tempView;
+}
 - (void)viewDidUnload
 {
     [super viewDidUnload];

@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
 @interface SlideToUnlockViewController : UIViewController
 
+-(id)initWithFrame:(CGRect)passedFrame;
 @end
