@@ -9,3 +9,5 @@ To do/Issues:
 2. Figure out how to implement glowing text.
 
 3. Add an arrow to the slider
+
+[Video](http://www.youtube.com/watch?v=ODlkfvV759M)
